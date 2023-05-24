@@ -1,0 +1,42 @@
+@use "./base/variable" as v;
+.continue {
+  padding: 5.9rem 0 4.4rem;
+  background: url(../images/webp/continue_bg.webp) no-repeat center/cover;
+  &__inner {
+    padding: 0 5rem;
+    @include v.sm {
+      padding: 0 2%;
+    }
+  }
+  .sec-ttl {
+    color: #fff;
+  }
+  &__txt {
+    margin: 4.7rem 0 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.75;
+    text-align: center;
+    color: #fff;
+  }
+  &__btn {
+    display: block;
+    margin: 5rem auto 0;
+    padding: 1.9rem 0;
+    max-width: 21rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #83032a;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #333;
+    opacity: 1;
+    transition: opacity 0.5s;
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      transition: opacity 0.5s;
+    }
+  }
+}

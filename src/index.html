@@ -10,19 +10,109 @@
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/base/reset.css" />
     <link rel="stylesheet" href="./assets/css/base/common.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Coding Practice</title>
   </head>
   <body>
-    <header class="header">
-      <div class="box1"></div>
+    <header class="header" id="header">
+      <div class="header__inner inner">
+        <h1 class="header__logo">
+          <a href="">
+            <img src="./assets/images/webp/logo.webp" alt="Coding Practice" />
+          </a>
+        </h1>
+        <nav class="g-nav">
+          <ul class="g-nav__list">
+            <li class="g-nav__item">
+              <a href="">Top</a>
+            </li>
+            <li class="g-nav__item">
+              <a href="#challenge">My Challenge</a>
+            </li>
+            <li class="g-nav__item">
+              <a href="#continue">Just Continue</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="hoge"></section>
+      <section class="mv">
+        <div class="mv__inner inner">
+          <div class="mv__hero">
+            <h2 class="mv__hero__ttl">Coding Practice Everyday!!</h2>
+            <p class="mv__hero__lead">Start from HERE</p>
+          </div>
+        </div>
+      </section>
+      <section class="challenge" id="challenge">
+        <div class="challenge__inner inner">
+          <h2 class="sec-ttl">My Challenge</h2>
+          <ul class="challenge__list">
+            <li class="challenge__item">
+              <div class="challenge__item__txt">
+                <h3 class="challenge__item__txt-ttl">
+                  もくもく会in大阪のコーディングイベントに参加してきました！！
+                </h3>
+                <p class="challenge__item__txt-date">2020.06.28</p>
+              </div>
+              <figure class="challenge__item__thumb">
+                <img
+                  src="./assets/images/webp/challenge_item01.webp"
+                  alt=""
+                  class="challenge__item__thumb-image"
+                />
+              </figure>
+            </li>
+            <li class="challenge__item">
+              <div class="challenge__item__txt">
+                <h3 class="challenge__item__txt-ttl">
+                  模写コーディングを１つ終わらせることができました！！次はもう少し難しいものに挑戦します！
+                </h3>
+                <p class="challenge__item__txt-date">2020.07.02</p>
+              </div>
+              <figure class="challenge__item__thumb">
+                <img src="./assets/images/webp/challenge_item02.webp" alt="" />
+              </figure>
+            </li>
+            <li class="challenge__item">
+              <div class="challenge__item__txt">
+                <h3 class="challenge__item__txt-ttl">
+                  「1冊ですべて身につくHTML&CSSとWebデザイン入門講座」を完走しました！！
+                </h3>
+                <p class="challenge__item__txt-date">2020.07.10</p>
+              </div>
+              <figure class="challenge__item__thumb">
+                <img src="./assets/images/webp/challenge_item03.webp" alt="" />
+              </figure>
+            </li>
+          </ul>
+          <a href="" class="challenge__btn">もっと見る</a>
+        </div>
+      </section>
+      <section class="continue" id="continue">
+        <div class="continue__inner inner">
+          <h2 class="sec-ttl">Just Continue</h2>
+          <p class="continue__txt">
+            日々、学び続けるいつか、<br />Webで世界を今より少しだけ<br />よくするために<br />でも、今は自分のために<br />毎日少しずつ勉強する<br />そんな私と共に学んでくれる方を募集しています
+          </p>
+          <a href="" class="continue__btn">お問い合わせしてみる</a>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__inner">
+        <small class="footer__copy"
+          ><p>copyright(C) 2020 しょーごログ All Rights Reserved.</p></small
+        >
+      </div>
+    </footer>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -1,3 +1,55 @@
 @use "./base/variable" as v;
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2%;
+    @include v.sm {
+      flex-direction: column;
+      padding: 1rem 2%;
+    }
+  }
+  &__logo {
+    width: 17.9rem;
+    opacity: 1;
+    transition: opacity 0.5s;
+    @include v.sm {
+      width: 14rem;
+    }
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+      transition: opacity 0.5s;
+    }
+  }
+  .g-nav {
+    margin: 1rem 0 0;
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__item {
+      font-size: 1.6rem;
+      font-weight: bold;
+      opacity: 1;
+      transition: opacity 0.5s;
+      @include v.sm {
+        font-size: 1.4rem;
+      }
+      &:not(:last-child) {
+        margin: 0 2rem 0 0;
+      }
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+        transition: opacity 0.5s;
+      }
+    }
+  }
 }
